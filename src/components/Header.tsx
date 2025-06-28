@@ -18,11 +18,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src="/logo.svg" alt="Travel to Lanka" className="h-10 w-10" />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent">
-              Travel to Lanka
-            </h1>
+          <div className="flex items-center space-x-3"><a href="#home">
+            <img src="/logo.svg" alt="Travel to Lanka" className="h-16 w-16"  /></a><a href="#home">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent" >
+              Travel to Lanka  
+            </h1></a>
           </div>
 
           {/* Desktop Navigation */}

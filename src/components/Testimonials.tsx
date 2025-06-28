@@ -1,62 +1,67 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import React from "react";
+import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      country: 'United Kingdom',
+      name: "Denise Nardan",
+      country: "Singapore",
       rating: 5,
-      text: 'Travel to Lanka exceeded all our expectations! The cultural triangle tour was absolutely magnificent. Our guide Kasun was incredibly knowledgeable and friendly. The accommodation was perfect and every detail was taken care of. Sri Lanka is truly a gem!',
-      tour: 'Cultural Triangle Explorer',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'
+      text: "Sudarshana was our lovely driver on our visit to Sri Lanka. Not only did he keep us safe, he went above and beyond to make our experiences memorable. He was fantastic with my teen boys.Sudarshana is passionate about his country and is eager to show visitors just how beautiful Sri Lanka is.We can’t wait to go back and no doubt Sudarshana will be our guide once again.",
+      tour: "Cultural Triangle Explorer",
+      image:
+        "https://lh3.googleusercontent.com/a-/ALV-UjUUKu15RlhvW4cjvJvC2cHSKbxmpup8_3rgMmmy4DkMzTGw41ig=w65-h65-p-rp-mo-br100",
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      country: 'Australia',
+      name: "Javier Díez Alvaro",
+      country: "Spain",
       rating: 5,
-      text: 'What an incredible adventure! The hill country trek was challenging but so rewarding. The tea plantation visits were fascinating, and the train journey through the mountains was breathtaking. Thank you for an unforgettable experience!',
-      tour: 'Hill Country Adventure',
-      image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg'
+      text: "Suda is the best guide you can choose to visit Sri Lanka! We were a group of 6 friends and we had a great time with him. Very detailed and attentive, apart from suggesting visits and things to see outside the initial itinerary.We also spent a few days with Rashmika, and as it could not be otherwise, we also ended up delighted with him.The best guides for Sri Lanka! We will miss you!",
+      tour: "Southern Coast Paradise",
+      image:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWIKvwhwM1XiQ_goAHm8yV6O2a02JwEtTl9Bk1T2yKm-7glh7Z6=w65-h65-p-rp-mo-ba3-br100",
     },
     {
       id: 3,
-      name: 'Emma & David Wilson',
-      country: 'Canada',
+      name: "Mónica Díaz",
+      country: "Spain",
       rating: 5,
-      text: 'Our honeymoon in Sri Lanka was perfect! The southern coast beaches were paradise, and whale watching in Mirissa was a dream come true. The team arranged everything beautifully. We\'ll definitely be back!',
-      tour: 'Southern Coast Paradise',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg'
+      text: "We were 6 friends on a trip to Sri Lanka. We contacted Suda through a family member and it couldn't have been better. Suda guided us through Sri Lanka, planning everything in detail. It has been a wonderful experience and largely thanks to him, who organized everything perfectly. The last few days we were also with Rashmika, a colleague of hers who made the end of the trip a perfect closure. Without a doubt, I recommend it.Thank you!!🥰We miss you!!",
+      tour: "Wildlife Safari Expedition",
+      image:
+        "https://lh3.googleusercontent.com/a-/ALV-UjXNFlEwv_zA10Lxbfi3YfvHvARn2kcRCxFzS4JUHqy0AMbFekl1=w65-h65-p-rp-mo-br100",
     },
     {
       id: 4,
-      name: 'Hans Mueller',
-      country: 'Germany',
+      name: "Raveena Rawat",
+      country: "India",
       rating: 5,
-      text: 'The wildlife safari was extraordinary! We saw leopards, elephants, and so many birds. The Yala National Park experience was world-class. Professional guides and excellent organization throughout.',
-      tour: 'Wildlife Safari Expedition',
-      image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg'
+      text: "I fell in love with the beauty and calmness of the country. People here are super friendly. Our tour guide Sudharshan helped us to explore the hidden gem of srilanka. He is very passionate and extremely knowledgeable about the entire region. The itinerary was very well thought out. He really took good care of us.",
+      tour: "Hill Country Adventure",
+      image:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWr3FSJuaaJWABe6DbRBL4IAb1PnkajFw1glXm4CCXT1dT0ZxU=w65-h65-p-rp-mo-br100",
     },
     {
       id: 5,
-      name: 'Lisa Thompson',
-      country: 'United States',
+      name: "Claire and Bronte Forbes",
+      country: "United States",
       rating: 5,
-      text: 'Solo travel in Sri Lanka felt completely safe and comfortable thanks to Travel to Lanka. The complete island experience showed me everything from ancient temples to modern cities. Highly recommended!',
-      tour: 'Complete Island Experience',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg'
+      text: "Rashmika was an awesome driver. He was careful and safe -always. He was super polite, offered us extra places to stop if we wanted and was happy to flex and change plans when we needed or wanted to. He looked after us really well, making sure we knew where to buy tickets for attractions, where to get our washing done, places to eat. We had a really great trip and were grateful for Rashmika’s kindness and great driving!",
+      tour: "Complete Island Experience",
+      image: "https://images.pexels.com/photos/240561/pexels-photo-240561.jpeg",
     },
     {
       id: 6,
-      name: 'Roberto Silva',
-      country: 'Brazil',
+      name: "Roberto Silva",
+      country: "Brazil",
       rating: 5,
-      text: 'Amazing adventure sports package! White water rafting, rock climbing, and zip lining - all in the most beautiful settings. The adrenaline rush combined with stunning nature was perfect!',
-      tour: 'Adventure Sports Package',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg'
-    }
+      text: "Amazing adventure sports package! White water rafting, rock climbing, and zip lining - all in the most beautiful settings. The adrenaline rush combined with stunning nature was perfect!",
+      tour: "Adventure Sports Package",
+      image:
+        "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg",
+    },
   ];
 
   return (
@@ -65,11 +70,14 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             What Our
-            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent"> Travelers Say</span>
+            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+              {" "}
+              Travelers Say
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our happy travelers from around 
-            the world have to say about their Sri Lankan adventures.
+            Don't just take our word for it. Here's what our happy travelers
+            from around the world have to say about their Sri Lankan adventures.
           </p>
         </div>
 
@@ -81,7 +89,7 @@ const Testimonials = () => {
               className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 relative"
             >
               <Quote className="absolute top-4 right-4 h-8 w-8 text-emerald-200" />
-              
+
               <div className="flex items-center mb-6">
                 <img
                   src={testimonial.image}
@@ -89,11 +97,16 @@ const Testimonials = () => {
                   className="w-16 h-16 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-gray-900">{testimonial.name}</h3>
+                  <h3 className="font-bold text-gray-900">
+                    {testimonial.name}
+                  </h3>
                   <p className="text-sm text-gray-600">{testimonial.country}</p>
                   <div className="flex items-center mt-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                      <Star
+                        key={i}
+                        className="h-4 w-4 text-yellow-400 fill-current"
+                      />
                     ))}
                   </div>
                 </div>
@@ -125,15 +138,19 @@ const Testimonials = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-yellow-300 mb-2">5000+</div>
+              <div className="text-4xl font-bold text-yellow-300 mb-2">
+                5000+
+              </div>
               <div className="text-emerald-100">Happy Travelers</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-yellow-300 mb-2">4.9/5</div>
+              <div className="text-4xl font-bold text-yellow-300 mb-2">
+                4.9/5
+              </div>
               <div className="text-emerald-100">Average Rating</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-yellow-300 mb-2">50+</div>
+              <div className="text-4xl font-bold text-yellow-300 mb-2">20+</div>
               <div className="text-emerald-100">Countries Served</div>
             </div>
             <div>

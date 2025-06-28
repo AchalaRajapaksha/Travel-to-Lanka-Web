@@ -1,28 +1,32 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, MessageCircle, Send, Clock } from 'lucide-react';
+import React, { useState } from "react";
+import { MapPin, Phone, Mail, MessageCircle, Send, Clock } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    tourType: '',
-    travelDate: '',
-    groupSize: '',
-    budget: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    tourType: "",
+    travelDate: "",
+    groupSize: "",
+    budget: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create WhatsApp message
     const message = `Hi Travel to Lanka! I'm interested in booking a tour.
 
@@ -36,21 +40,29 @@ Budget: ${formData.budget}
 
 Message: ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/94771234567?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://wa.me/94789222201?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-gray-50 to-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Plan Your
-            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent"> Dream Trip</span>
+            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+              {" "}
+              Dream Trip
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to explore Sri Lanka? Get in touch with us and let's create 
-            an unforgettable journey tailored just for you.
+            Ready to explore Sri Lanka? Get in touch with us and let's create an
+            unforgettable journey tailored just for you.
           </p>
         </div>
 
@@ -58,16 +70,20 @@ Message: ${formData.message}`;
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-              
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Get in Touch
+              </h3>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-emerald-100 p-3 rounded-lg">
                     <MapPin className="h-6 w-6 text-emerald-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Visit Our Office</h4>
-                    <p className="text-gray-600">123 Galle Road, Colombo 03, Sri Lanka</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Visit Our Office
+                    </h4>
+                    <p className="text-gray-600">Seeduwa, Sri Lanka</p>
                   </div>
                 </div>
 
@@ -76,9 +92,9 @@ Message: ${formData.message}`;
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Call Us</h4>
-                    <p className="text-gray-600">+94 77 123 4567</p>
-                    <p className="text-gray-600">+94 11 234 5678</p>
+                    <h4 className="font-semibold text-gray-900">WhatsApp</h4>
+                    <p className="text-gray-600">+94 78 922 2201</p>
+                    <p className="text-gray-600">+94 76 168 1064</p>
                   </div>
                 </div>
 
@@ -88,8 +104,10 @@ Message: ${formData.message}`;
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email Us</h4>
-                    <p className="text-gray-600">info@traveltolanka.com</p>
-                    <p className="text-gray-600">tours@traveltolanka.com</p>
+                    <p className="text-gray-600">contact@traveltolanka.com</p>
+                    <p className="text-gray-600">
+                      traveltolankawithsuda@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -98,10 +116,12 @@ Message: ${formData.message}`;
                     <Clock className="h-6 w-6 text-yellow-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Office Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Office Hours
+                    </h4>
+                    <p className="text-gray-600">
+                      Monday - Sunday: 5:00 AM - 11:00 PM
+                    </p>
                   </div>
                 </div>
               </div>
@@ -113,11 +133,13 @@ Message: ${formData.message}`;
                 <MessageCircle className="h-8 w-8" />
                 <div>
                   <h3 className="text-xl font-bold">Quick WhatsApp Contact</h3>
-                  <p className="text-green-100">Get instant responses to your queries</p>
+                  <p className="text-green-100">
+                    Get instant responses to your queries
+                  </p>
                 </div>
               </div>
               <a
-                href="https://wa.me/94771234567?text=Hi! I'm interested in Sri Lankan tour packages"
+                href="https://wa.me/94789222201?text=Hi! I'm interested in Sri Lankan tour packages"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors"
@@ -130,8 +152,10 @@ Message: ${formData.message}`;
 
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
-            
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Send Us a Message
+            </h3>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -148,7 +172,7 @@ Message: ${formData.message}`;
                     placeholder="Your full name"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Email Address *
@@ -179,7 +203,7 @@ Message: ${formData.message}`;
                     placeholder="+1 234 567 8900"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Tour Type
@@ -213,7 +237,7 @@ Message: ${formData.message}`;
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Group Size
@@ -245,9 +269,9 @@ Message: ${formData.message}`;
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                 >
                   <option value="">Select budget range</option>
-                  <option value="budget">Budget ($200-$500)</option>
-                  <option value="mid-range">Mid-range ($500-$1000)</option>
-                  <option value="luxury">Luxury ($1000+)</option>
+                  <option value="budget">Budget (€400-€800)</option>
+                  <option value="mid-range">Mid-range (€800-€1000)</option>
+                  <option value="luxury">Luxury (€1000+)</option>
                   <option value="custom">Custom Budget</option>
                 </select>
               </div>
