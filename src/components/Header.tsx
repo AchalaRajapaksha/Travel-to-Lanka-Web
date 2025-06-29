@@ -1,28 +1,36 @@
-import React, { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Tours', href: '#tours' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Tours", href: "#tours" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3"><a href="#home">
-            <img src="/logo.svg" alt="Travel to Lanka" className="h-16 w-16"  /></a><a href="#home">
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent" >
-              Travel to Lanka  
-            </h1></a>
+          <div className="flex items-center space-x-3">
+            <a href="#home">
+              <img
+                src="/logo.svg"
+                alt="Travel to Lanka"
+                className="h-16 w-16"
+              />
+            </a>
+            <a href="#home">
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent">
+                Travel to Lanka
+              </h1>
+            </a>
           </div>
 
           {/* Desktop Navigation */}

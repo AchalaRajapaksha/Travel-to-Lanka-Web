@@ -18,7 +18,6 @@ interface TourPackage {
   basePricePerPerson: number;
   rating: number;
   image: string;
-  highlights: string[];
   itinerary: string[];
   description: string;
 }
@@ -60,26 +59,15 @@ const TourPackages: React.FC = () => {
       rating: 4.9,
       image:
         "https://images.pexels.com/photos/1259789/pexels-photo-1259789.jpeg",
-      highlights: [
-        "Ancient City Anuradhapura",
-        "Ancient City Polonnaruwa",
-        "Sigiriya Rock Fortress",
-        "Dambulla Cave Temple",
-        "Traditional Village Tour",
-        "Kandy Temple",
-        "Safari in Minneriya/Kaudulla/Eco hurulu park",
-      ],
+
       itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
+        "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
+        "Explore ancient city ruins.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple. Optional village or spice garden tour.",
+        "Transfer to Kandy via spice gardens in Matale. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show. Optional train ride to Nuwara Eliya.",
+        "Visit local village and tea plantation. Overnight in Kandy or Nuwara Eliya.",
+        "Transfer to Colombo for departure or city tour.",
       ],
       description:
         "Discover Sri Lanka's ancient heritage with visits to UNESCO World Heritage sites.",
@@ -92,150 +80,130 @@ const TourPackages: React.FC = () => {
       basePricePerPerson: 90,
       rating: 4.8,
       image: "https://images.pexels.com/photos/595196/pexels-photo-595196.jpeg",
-      highlights: [
-        "Sigiriya Rock Fortress",
-        "Dambulla Cave Temple",
-        "Kandy",
-        "Nuwara Eliya",
-        "Ella",
-        "Tea Plantation Tours",
-        "Train Journey",
-        "Little Adam's Peak",
-        "Safari in Minneriya/Kaudulla/Eco hurulu park",
-      ],
+
       itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
+        "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
+        "Explore ancient city ruins.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple.",
+        "Transfer to Kandy via spice gardens in Matale. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show.",
+        "Transfer to Nuwara Eliya or Ella. Visit tea plantation and factory.",
+        "Take scenic train ride from Nanu Oya to Ella.",
+        "Visit Diyaluma Waterfall. Optional short hikes or nature trails.",
+        "Visit Ramboda Waterfall and surrounding nature spots.",
+        "Transfer to Colombo for departure or city tour.",
       ],
       description:
         "Trek through misty mountains and lush tea plantations in Sri Lanka's hill country.",
     },
     {
       id: 3,
-      title: "Southern Coast Paradise",
+      title: "Southern Coast Paradise (December - April)",
       category: "beach",
-      duration: 6,
+      duration: 12,
       basePricePerPerson: 67,
       rating: 4.7,
       image:
         "https://images.pexels.com/photos/2274581/pexels-photo-2274581.jpeg",
-      highlights: [
-        "Mirissa Beach",
-        "Whale Watching",
-        "Galle Fort",
-        "Surfing Lessons",
-      ],
+
       itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
+        "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
+        "Explore ancient city ruins and visit Minneriya or Kaudulla safari.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple.",
+        "Transfer to Kandy via spice gardens in Matale. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show.",
+        "Transfer to highlands (Nuwara Eliya or Ella). Visit tea plantation and factory.",
+        "Travel to southern coast beach (Mirissa or Unawatuna) for stay.",
+        "Relax at the beach and enjoy whale watching or snorkeling.",
+        "Visit Galle Fort and nearby beaches.",
+        "Free day at the beach or optional water activities.",
+        "Transfer back to Colombo.",
+        "Colombo city tour and departure.",
       ],
       description:
         "Relax on pristine beaches and explore charming coastal towns.",
     },
     {
       id: 4,
-      title: "Wildlife Safari Expedition",
-      category: "wildlife",
-      duration: 4,
+      title: "Eastern Coast Paradise (May – September)",
+      category: "beach",
+      duration: 12,
       basePricePerPerson: 132,
       rating: 4.9,
-      image: "https://images.pexels.com/photos/322480/pexels-photo-322480.jpeg",
-      highlights: [
-        "Yala National Park",
-        "Elephant Orphanage",
-        "Leopard Spotting",
-        "Bird Watching",
-      ],
+      image: "https://images.pexels.com/photos/319892/pexels-photo-319892.jpeg",
+
       itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
+        "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
+        "Explore ancient city ruins and visit Minneriya or Kaudulla safari.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple.",
+        "Transfer to Kandy via spice gardens in Matale. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show.",
+        "Transfer to highlands (Nuwara Eliya or Ella). Visit tea plantation and factory.",
+        "Travel to Trincomalee or Passikudah for beach stay.",
+        "Relax at the beach and enjoy snorkeling at Pigeon Island.",
+        "Visit Nilaveli or Marble Beach.",
+        "Free day at the beach or optional water activities.",
+        "Transfer back to Colombo.",
+        "Colombo city tour and departure.",
+      ],
+      description:
+        "Relax on pristine beaches and explore charming coastal towns.",
+    },
+    {
+      id: 5,
+      title: "Wildlife Safari Expedition",
+      category: "wildlife",
+      duration: 12,
+      basePricePerPerson: 83,
+      rating: 5.0,
+      image: "https://images.pexels.com/photos/322480/pexels-photo-322480.jpeg",
+
+      itinerary: [
+        "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
+        "Explore ancient city ruins.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple.",
+        "Transfer to Minneriya or Kaudulla for wildlife safari.",
+        "Transfer to Kandy via spice gardens in Matale. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show.",
+        "Transfer to Nuwara Eliya or Ella. Visit tea plantation and factory.",
+        "Local village visit and nature trails.",
+        "Take scenic train ride from Nanu Oya to Ella.",
+        "Transfer to Yala or Udawalawe National Park for safari.",
+        "Morning safari at Yala or Udawalawe. Transfer to southern coast beach (Mirissa or Unawatuna).",
+        "Relax at the beach. Transfer to Colombo for departure.",
       ],
       description:
         "Encounter Sri Lanka's incredible wildlife in their natural habitats.",
     },
     {
-      id: 5,
-      title: "Complete Island Experience",
-      category: "cultural",
-      duration: 12,
-      basePricePerPerson: 83,
-      rating: 5.0,
-      image:
-        "https://images.pexels.com/photos/32678292/pexels-photo-32678292.jpeg",
-      highlights: [
-        "All Major Attractions",
-        "Cultural Shows",
-        "Cooking Classes",
-        "Ayurveda Spa",
-      ],
-      itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
-      ],
-      description:
-        "The ultimate Sri Lankan adventure covering all highlights of the island.",
-    },
-    {
       id: 6,
-      title: "Adventure Sports Package",
+      title: "Complete Island Experience",
       category: "adventure",
-      duration: 8,
+      duration: 15,
       basePricePerPerson: 87,
       rating: 4.8,
       image:
         "https://images.pexels.com/photos/1615766/pexels-photo-1615766.jpeg",
-      highlights: [
-        "White Water Rafting",
-        "Rock Climbing",
-        "Zip Lining",
-        "Mountain Biking",
-      ],
+
       itinerary: [
-        "Arrival in Colombo and transfer to Kandy",
-        "Kandy to Knuckles Mountain Range – scenic drive and short hikes",
-        "Full-day Knuckles Range trek with waterfalls and forest views",
-        "Drive to Nuwara Eliya via Ramboda Falls and tea plantations",
-        "Visit Horton Plains, World’s End & Baker’s Falls",
-        "Take the scenic train to Ella and explore the village",
-        "Hike Ella Rock and visit Little Adam’s Peak",
-        "Transfer to Haputale and visit Lipton’s Seat",
-        "Drive back to Colombo via Devon & St. Clair Falls",
-        "Colombo city tour and airport departure",
+        "Arrive Colombo. Transfer to Anuradhapura.",
+        "Explore Anuradhapura ruins.",
+        "Visit Sigiriya Rock Fortress and Dambulla Cave Temple.",
+        "Wildlife safari at Kaudulla or Minneriya.",
+        "Transfer to Kandy via spice gardens. Evening visit to Temple of the Tooth.",
+        "Kandy city tour and cultural show.",
+        "Transfer to Nuwara Eliya. Visit tea plantation and factory.",
+        "Explore Nuwara Eliya and surroundings.",
+        "Take scenic train ride from Nanu Oya to Ella.",
+        "Explore Ella and nearby hikes.",
+        "Transfer to Yala or Udawalawe for safari.",
+        "Morning safari. Transfer to southern or eastern coast beach.",
+        "Relax at the beach.",
+        "Visit Galle Fort and nearby attractions.",
+        "Colombo city tour and departure.",
       ],
       description:
-        "Thrilling adventures for adrenaline seekers in Sri Lanka's diverse landscapes.",
+        "A comprehensive journey across the island, perfect for those who want to truly explore Sri Lanka.",
     },
   ];
 
@@ -251,15 +219,13 @@ const TourPackages: React.FC = () => {
     );
 
     const calculateTotalPrice = (): number => {
-            const vehicleCost = selectedVehicle.pricePerDay * pkg.duration;
-      return  vehicleCost;
+      const vehicleCost = selectedVehicle.pricePerDay * pkg.duration;
+      return vehicleCost;
     };
 
     const handleBookTour = () => {
       const totalPrice = calculateTotalPrice();
-      const message = `Hi Travel to Lanka! I'm interested in booking the ${
-        pkg.title
-      }.
+      const message = `Hi Travel to Lanka! I'm interested in booking the ${pkg.title}.
 
 Tour Details:
 - Duration: ${pkg.duration} days
@@ -267,7 +233,6 @@ Tour Details:
 - Vehicle: ${selectedVehicle.name}
 - Total Price: $${totalPrice}
 
-Highlights: ${pkg.highlights.join(", ")}
 
 Please provide more information and confirm availability.`;
 
@@ -298,11 +263,10 @@ Please provide more information and confirm availability.`;
           </div>
         </div>
 
-      
         {pkg.itinerary && (
           <div className="mb-4">
             <h4 className="font-semibold text-gray-900 mb-2">
-             Tour Itinerary:
+              Tour Itinerary:
             </h4>
             <ul className="list-decimal list-inside text-sm text-gray-700 space-y-1">
               {pkg.itinerary.map((item, index) => (
@@ -372,19 +336,6 @@ Please provide more information and confirm availability.`;
               <span>Total for transport</span>
               <span>€{calculateTotalPrice()}</span>
             </div>
-            <span className="text-sm">
-              <br />
-              ** Please note that the prices mentioned cover transport only.
-              However, we are happy to assist you with additional services upon
-              request, including:
-              <ul className="list-disc ">
-                <li>Safari experiences and other activities</li>
-                <li> Train ticket reservations</li>
-                <li>Hotel bookings</li>
-              </ul>
-              Feel free to let us know your preferences, and we’ll tailor
-              everything to your needs.
-            </span>
           </div>
         </div>
 
@@ -401,7 +352,7 @@ Please provide more information and confirm availability.`;
   };
 
   return (
-    <section id="tours" className="py-20 bg-white">
+    <section id="tours" className="py-2 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -433,11 +384,36 @@ Please provide more information and confirm availability.`;
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  ">
           {filteredPackages.map((pkg) => (
-            
-              <TourCard key={pkg.id} pkg={pkg} />
-          
+            <TourCard key={pkg.id} pkg={pkg} />
           ))}
         </div>
+      </div>
+      <div className="text-sm text-[#c21723] ml-6">
+        <span className="text-sm ml-4">
+          <br />
+          ** Please note that the prices mentioned cover transport only.
+          However, we are happy to assist you with additional services upon
+          request, including:
+          <ul className="list-disc ml-6">
+            <li>Safari experiences and other activities</li>
+            <li> Train ticket reservations</li>
+            <li>Hotel bookings</li>
+          </ul>
+          Feel free to let us know your preferences, and we’ll tailor everything
+          to your needs.
+        </span>
+      </div>
+      <br />
+      <br />
+      <div className="flex justify-center bg-white ">
+        <a
+          href="https://wa.me/94789222201?text=Hi! I'm interested in customized tour packages"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-bounce inline-flex items-center space-x-2 bg-[#20c9b8] text-white px-10 py-5 rounded-full font-semibold hover:bg-teal-700 transition-colors"
+        >
+          <span>Get your Customized Itinerary →</span>
+        </a>
       </div>
     </section>
   );

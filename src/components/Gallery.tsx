@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, MapPin, Camera } from 'lucide-react';
+import React, { useState } from "react";
+import { X, MapPin, Camera } from "lucide-react";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -7,88 +7,88 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: 'https://images.pexels.com/photos/7740160/pexels-photo-7740160.jpeg',
-      title: 'Sigiriya Rock Fortress',
-      location: 'Central Province',
-      category: 'Heritage'
+      src: "/images/img1.jpg",
+      title: "Tea Plantations",
+      location: "Nuwara Eliya",
+      category: "Culture",
     },
     {
       id: 2,
-      src: 'https://images.pexels.com/photos/12935073/pexels-photo-12935073.jpeg',
-      title: 'Ella Rock',
-      location: 'Uva Province',
-      category: 'Nature'
+      src: "/images/img2.jpg",
+      title: "Sigiriya",
+      location: "Sigiriya",
+      category: "Heritage",
     },
     {
       id: 3,
-      src: 'https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg',
-      title: 'Mirissa Beach',
-      location: 'Southern Province',
-      category: 'Beach'
+      src: "/images/img3.jpg",
+      title: "Central point of Sri Lanka",
+      location: "Nalanda gedige",
+      category: "Heritage",
     },
     {
       id: 4,
-      src: 'https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg',
-      title: 'Wild Elephant',
-      location: 'Yala National Park',
-      category: 'Wildlife'
+      src: "/images/img4.jpg",
+      title: "Pidurangala Rock",
+      location: "Pidurangala",
+      category: "Nature",
     },
     {
       id: 5,
-      src: 'https://images.pexels.com/photos/3566114/pexels-photo-3566114.jpeg',
-      title: 'Temple of the Tooth',
-      location: 'Kandy',
-      category: 'Heritage'
+      src: "/images/img5.jpg",
+      title: "Temple of the Tooth",
+      location: "Kandy",
+      category: "Heritage",
     },
     {
       id: 6,
-      src: 'https://images.pexels.com/photos/28631113/pexels-photo-28631113.jpeg',
-      title: 'Tea Plantations',
-      location: 'Nuwara Eliya',
-      category: 'Nature'
+      src: "/images/img6.jpg",
+      title: "Spice and Herbs Graden",
+      location: "Sigiriya",
+      category: "Nature",
     },
     {
       id: 7,
-      src: 'https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg',
-      title: 'Coconut Palms',
-      location: 'Western Coast',
-      category: 'Beach'
+      src: "/images/img7.jpg",
+      title: "Enjoy Sri Lankan Traditional meal",
+      location: "Anuradhapura",
+      category: "Culture",
     },
     {
       id: 8,
-      src: 'https://images.pexels.com/photos/12935074/pexels-photo-12935074.jpeg',
-      title: 'Nine Arch Bridge',
-      location: 'Ella',
-      category: 'Heritage'
+      src: "/images/img8.jpg",
+      title: "Nine Arch Bridge",
+      location: "Ella",
+      category: "Heritage",
     },
     {
       id: 9,
-      src: 'https://images.pexels.com/photos/7740161/pexels-photo-7740161.jpeg',
-      title: 'Traditional Dancer',
-      location: 'Kandy',
-      category: 'Culture'
+      src: "/images/img9.jpg",
+      title: "Hill Country",
+      location: "Nuwara Eliya",
+      category: "Culture",
     },
     {
       id: 10,
-      src: 'https://images.pexels.com/photos/28631114/pexels-photo-28631114.jpeg',
-      title: 'Tea Picker',
-      location: 'Hill Country',
-      category: 'Culture'
+      src: "/images/img12.jpg",
+      title: "Train ride",
+      location: "Ella",
+      category: "Nature",
     },
     {
       id: 11,
-      src: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
-      title: 'Buddhist Temple',
-      location: 'Colombo',
-      category: 'Heritage'
+      src: "/images/img11.jpg",
+      title: "Enjoy the hospitality",
+      location: "Thissamaharama",
+      category: "Culture",
     },
     {
       id: 12,
-      src: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
-      title: 'Sunset Beach',
-      location: 'West Coast',
-      category: 'Beach'
-    }
+      src: "/images/img10.jpg",
+      title: "Temple of the Tooth",
+      location: "Kandy",
+      category: "Heritage",
+    },
   ];
 
   return (
@@ -98,7 +98,6 @@ const Gallery = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-         
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Photo
             <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
@@ -118,13 +117,13 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {images.map((image, index) => (
             <div
               key={image.id}
               className={`group relative overflow-hidden rounded-2xl cursor-pointer transform hover:scale-105 transition-all duration-500 hover:shadow-2xl ${
                 index % 8 === 0 || index % 8 === 3
-                  ? "lg:col-span-2 lg:row-span-2"
+                  ? "lg:col-span-0 lg:row-span-0"
                   : ""
               } ${index % 8 === 1 || index % 8 === 6 ? "md:col-span-2" : ""}`}
               onClick={() => setSelectedImage(image.id)}
@@ -217,7 +216,6 @@ const Gallery = () => {
               <button className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors flex items-center space-x-2">
                 <span>Instagram</span>
               </button>
-             
             </div>
           </div>
         </div>
