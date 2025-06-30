@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, Star, Award, Users } from 'lucide-react';
+import React from "react";
+import { ArrowRight, Star, Award, Users } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -36,7 +36,7 @@ const Hero = () => {
             <span className="text-5xl md:text-7xl font-bold text-[#1a4d2d] mb-6 leading-tight">
               Travel to Lanka
             </span>
-            <span className="block bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent pb-4">
               Your Trusted Partner in Exploring Sri Lanka
             </span>
           </h1>
