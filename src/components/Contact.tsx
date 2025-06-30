@@ -94,7 +94,6 @@ Message: ${formData.message}`;
                   <div>
                     <h4 className="font-semibold text-gray-900">WhatsApp</h4>
                     <p className="text-gray-600">+94 78 922 2201</p>
-                    <p className="text-gray-600">+94 76 168 1064</p>
                   </div>
                 </div>
 

@@ -94,10 +94,10 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="py-20 bg-gradient-to-b from-gray-50 to-white"
+      className="py-20 bg-gradient-to-b from-gray-50 to-white "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Photo
             <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
@@ -200,22 +200,34 @@ const Gallery = () => {
           </div>
         )}
 
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        <div className="text-center mt-10">
+          <div className="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl p-6 mb-2">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Want to see more stunning Sri Lankan destinations?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-2">
               Follow us on social media for daily Sri Lankan beauty and travel
               inspiration.
             </p>
             <div className="flex justify-center space-x-4">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors flex items-center space-x-2">
-                <span>Facebook</span>
-              </button>
-              <button className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors flex items-center space-x-2">
-                <span>Instagram</span>
-              </button>
+              <a
+                href="https://www.facebook.com/share/1Fbp2iDsqu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors flex items-center space-x-2">
+                  <span>Facebook</span>
+                </button>
+              </a>
+              <a
+                href="https://www.instagram.com/travel_to_lanka__?igsh=dnlqcWRmaTFsd2hq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors flex items-center space-x-2">
+                  <span>Instagram</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>

@@ -80,13 +80,13 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1Fbp2iDsqu/"
                 className="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition-colors duration-300"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/travel_to_lanka__?igsh=dnlqcWRmaTFsd2hq"
                 className="bg-gray-800 p-3 rounded-full hover:bg-pink-600 transition-colors duration-300"
               >
                 <Instagram className="h-5 w-5" />

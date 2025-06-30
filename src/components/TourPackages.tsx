@@ -231,7 +231,7 @@ Tour Details:
 - Duration: ${pkg.duration} days
 - Group Size: ${groupSize} people
 - Vehicle: ${selectedVehicle.name}
-- Total Price: $${totalPrice}
+- Total Price: €${totalPrice}
 
 
 Please provide more information and confirm availability.`;
@@ -309,7 +309,7 @@ Please provide more information and confirm availability.`;
           >
             {vehicles.map((v) => (
               <option key={v.id} value={v.id} disabled={groupSize > v.capacity}>
-                {v.name} (up to {v.capacity} people) - ${v.pricePerDay}/day
+                {v.name} (up to {v.capacity} people) - €{v.pricePerDay}/day
               </option>
             ))}
           </select>
@@ -388,7 +388,7 @@ Please provide more information and confirm availability.`;
           ))}
         </div>
       </div>
-      <div className="text-sm text-[#c21723] ml-6">
+      <div className="text-m text-[#068080] ml-6 ">
         <span className="text-sm ml-4">
           <br />
           ** Please note that the prices mentioned cover transport only.
