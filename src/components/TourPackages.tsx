@@ -57,8 +57,7 @@ const TourPackages: React.FC = () => {
       duration: 7,
       basePricePerPerson: 85,
       rating: 4.9,
-      image:
-        "https://images.pexels.com/photos/1259789/pexels-photo-1259789.jpeg",
+      image: "images/pexels-photo-1259789.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
@@ -79,7 +78,7 @@ const TourPackages: React.FC = () => {
       duration: 10,
       basePricePerPerson: 90,
       rating: 4.8,
-      image: "https://images.pexels.com/photos/595196/pexels-photo-595196.jpeg",
+      image: "images/pexels-photo-595196.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
@@ -103,8 +102,7 @@ const TourPackages: React.FC = () => {
       duration: 12,
       basePricePerPerson: 67,
       rating: 4.7,
-      image:
-        "https://images.pexels.com/photos/2274581/pexels-photo-2274581.jpeg",
+      image: "images/pexels-photo-2274581.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
@@ -130,7 +128,7 @@ const TourPackages: React.FC = () => {
       duration: 12,
       basePricePerPerson: 132,
       rating: 4.9,
-      image: "https://images.pexels.com/photos/319892/pexels-photo-319892.jpeg",
+      image: "images/pexels-photo-319892.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
@@ -156,7 +154,7 @@ const TourPackages: React.FC = () => {
       duration: 12,
       basePricePerPerson: 83,
       rating: 5.0,
-      image: "https://images.pexels.com/photos/322480/pexels-photo-322480.jpeg",
+      image: "images/pexels-photo-322480.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura or Polonnaruwa.",
@@ -182,8 +180,7 @@ const TourPackages: React.FC = () => {
       duration: 15,
       basePricePerPerson: 87,
       rating: 4.8,
-      image:
-        "https://images.pexels.com/photos/1615766/pexels-photo-1615766.jpeg",
+      image: "images/pexels-photo-1615766.jpeg",
 
       itinerary: [
         "Arrive Colombo. Transfer to Anuradhapura.",

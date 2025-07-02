@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mountain, Waves, Camera, Heart } from 'lucide-react';
+import React from "react";
+import { Mountain, Waves, Camera, Heart } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -8,31 +8,28 @@ const About = () => {
       title: "Ancient Heritage",
       description:
         "Explore 2,500 years of rich history through magnificent temples, ancient cities, and UNESCO World Heritage sites.",
-      image:
-        "https://images.pexels.com/photos/1259789/pexels-photo-1259789.jpeg",
+      image: "images/pexels-photo-1259789.jpeg",
     },
     {
       icon: Waves,
       title: "Pristine Beaches",
       description:
         "Relax on golden sandy beaches along the Indian Ocean with crystal-clear waters and perfect surfing conditions.",
-      image: "https://images.pexels.com/photos/319898/pexels-photo-319898.jpeg",
+      image: "images/pexels-photo-319898.jpeg",
     },
     {
       icon: Camera,
       title: "Wildlife Safari",
       description:
         "Encounter elephants, leopards, and exotic birds in our national parks and nature reserves.",
-      image:
-        "https://images.pexels.com/photos/8126089/pexels-photo-8126089.jpeg",
+      image: "images/pexels-photo-8126089.jpeg",
     },
     {
       icon: Heart,
       title: "Warm Hospitality",
       description:
         "Experience the genuine warmth and friendliness of Sri Lankan people and their vibrant culture.",
-      image:
-        "https://images.pexels.com/photos/5858998/pexels-photo-5858998.jpeg",
+      image: "images/pexels-photo-5858998.jpeg",
     },
   ];
 
@@ -61,18 +58,18 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <img
-              src="https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg"
+              src="images/pexels-photo-2403209.jpeg"
               alt="Train"
               className="w-full h-80 object-cover rounded-2xl shadow-lg"
             />
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.pexels.com/photos/1998438/pexels-photo-1998438.jpeg"
+                src="images/pexels-photo-1998438.jpeg"
                 alt="Beach"
                 className="w-full h-40 object-cover rounded-xl shadow-md"
               />
               <img
-                src="https://images.pexels.com/photos/13391116/pexels-photo-13391116.jpeg"
+                src="images/pexels-photo-13391116.jpeg"
                 alt="Sigiriya"
                 className="w-full h-40 object-cover rounded-xl shadow-md"
               />
@@ -82,18 +79,18 @@ const About = () => {
           <div className="space-y-6">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.pexels.com/photos/18161079/pexels-photo-18161079.jpeg"
+                src="images/pexels-photo-18161079.jpeg"
                 alt="Dancer"
                 className="w-full h-40 object-cover rounded-xl shadow-md"
               />
               <img
-                src="https://images.pexels.com/photos/17081253/pexels-photo-17081253.jpeg"
+                src="images/pexels-photo-17081253.jpeg"
                 alt="Tiger"
                 className="w-full h-40 object-cover rounded-xl shadow-md"
               />
             </div>
             <img
-              src="https://images.pexels.com/photos/31184355/pexels-photo-31184355.jpeg"
+              src="images/pexels-photo-31184355.jpeg"
               alt="Elephant"
               className="w-full h-80 object-cover rounded-2xl shadow-lg"
             />
@@ -129,7 +126,7 @@ const About = () => {
         <div className="bg-gradient-to-r from-emerald-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img
-              src="https://images.pexels.com/photos/7740160/pexels-photo-7740160.jpeg"
+              src="images/pexels-photo-8126089.jpeg"
               alt="Background"
               className="w-full h-full object-cover"
             />

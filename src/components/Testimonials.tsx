@@ -10,8 +10,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Sudarshana was our lovely driver on our visit to Sri Lanka. Not only did he keep us safe, he went above and beyond to make our experiences memorable. He was fantastic with my teen boys.Sudarshana is passionate about his country and is eager to show visitors just how beautiful Sri Lanka is.We can’t wait to go back and no doubt Sudarshana will be our guide once again.",
       tour: "Cultural Triangle Explorer",
-      image:
-        "https://lh3.googleusercontent.com/a-/ALV-UjUUKu15RlhvW4cjvJvC2cHSKbxmpup8_3rgMmmy4DkMzTGw41ig=w65-h65-p-rp-mo-br100",
+      image: "/images/Denise.png",
     },
     {
       id: 2,
@@ -20,8 +19,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Suda is the best guide you can choose to visit Sri Lanka! We were a group of 6 friends and we had a great time with him. Very detailed and attentive, apart from suggesting visits and things to see outside the initial itinerary.We also spent a few days with Rashmika, and as it could not be otherwise, we also ended up delighted with him.The best guides for Sri Lanka! We will miss you!",
       tour: "Southern Coast Paradise",
-      image:
-        "https://lh3.googleusercontent.com/a-/ALV-UjWIKvwhwM1XiQ_goAHm8yV6O2a02JwEtTl9Bk1T2yKm-7glh7Z6=w65-h65-p-rp-mo-ba3-br100",
+      image: "/images/Javier.png",
     },
     {
       id: 3,
@@ -30,8 +28,7 @@ const Testimonials = () => {
       rating: 5,
       text: "We were 6 friends on a trip to Sri Lanka. We contacted Suda through a family member and it couldn't have been better. Suda guided us through Sri Lanka, planning everything in detail. It has been a wonderful experience and largely thanks to him, who organized everything perfectly. The last few days we were also with Rashmika, a colleague of hers who made the end of the trip a perfect closure. Without a doubt, I recommend it.Thank you!!🥰We miss you!!",
       tour: "Wildlife Safari Expedition",
-      image:
-        "https://lh3.googleusercontent.com/a-/ALV-UjXNFlEwv_zA10Lxbfi3YfvHvARn2kcRCxFzS4JUHqy0AMbFekl1=w65-h65-p-rp-mo-br100",
+      image: "/images/Monica.png",
     },
     {
       id: 4,
@@ -40,8 +37,7 @@ const Testimonials = () => {
       rating: 5,
       text: "I fell in love with the beauty and calmness of the country. People here are super friendly. Our tour guide Sudharshan helped us to explore the hidden gem of srilanka. He is very passionate and extremely knowledgeable about the entire region. The itinerary was very well thought out. He really took good care of us.",
       tour: "Hill Country Adventure",
-      image:
-        "https://lh3.googleusercontent.com/a-/ALV-UjWr3FSJuaaJWABe6DbRBL4IAb1PnkajFw1glXm4CCXT1dT0ZxU=w65-h65-p-rp-mo-br100",
+      image: "/images/Raveena.png",
     },
     {
       id: 5,
@@ -50,7 +46,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Rashmika was an awesome driver. He was careful and safe -always. He was super polite, offered us extra places to stop if we wanted and was happy to flex and change plans when we needed or wanted to. He looked after us really well, making sure we knew where to buy tickets for attractions, where to get our washing done, places to eat. We had a really great trip and were grateful for Rashmika’s kindness and great driving!",
       tour: "Complete Island Experience",
-      image: "https://images.pexels.com/photos/240561/pexels-photo-240561.jpeg",
+      image: "images/Forbes.jpg",
     },
     {
       id: 6,

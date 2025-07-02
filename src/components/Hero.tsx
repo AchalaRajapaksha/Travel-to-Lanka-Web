@@ -13,15 +13,13 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
           style={{
-            backgroundImage:
-              'url("https://images.pexels.com/photos/1998439/pexels-photo-1998439.jpeg")',
+            backgroundImage: 'url("images/pexels-photo-1998439.jpeg")',
           }}
         ></div>
         <div
           className="absolute inset-0 bg-cover bg-center opacity-0 animate-pulse"
           style={{
-            backgroundImage:
-              'url("https://images.pexels.com/photos/2403209/pexels-photo-2403209.jpeg")',
+            backgroundImage: 'url("images/pexels-photo-2403209.jpeg")',
             animationDelay: "5s",
             animationDuration: "20s",
           }}

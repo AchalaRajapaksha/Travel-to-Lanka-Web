@@ -183,7 +183,7 @@ const Footer = () => {
           <div className="text-center mt-4 text-gray-500 text-sm">
             Made with{" "}
             <Heart className="inline h-4 w-4 text-red-500 fill-current" /> for
-            travelers who love Sri Lanka --Achala Rajapaksha--
+            travelers who love Sri Lanka 
           </div>
         </div>
       </div>
